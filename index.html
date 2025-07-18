@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" id="root-element">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body id="BG">
+    <div class="container">
+      <nav id="desktop-nav">
+        <div class="logo">Man Deep</div>
+        <i class="ri-sun-fill icon mode-changer" id="modeChanger"></i>
+        <div class="nav-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Images/coder-profile.png"
+            alt="Man Deep Profile Picture"
+            id="profile-pic"
+          />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1 text">Hello I'm</p>
+          <h1 class="title">Man Deep</h1>
+          <p class="section__text__p2">Fronted Developer</p>
+          <div class="btn-container">
+            <button class="btn cv-ref-btn" onclick="window.open('#About')">Download CV</button>
+            <button class="btn contact-ref-btn" onclick="location.href='#Contact'">Contact Info</button>
+          </div>
+          <div class="social-container">
+            <a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="ri-linkedin-box-fill icon"></i></a>
+            
+            <a href="https://github.com/tagda-coder/" target="_blank" class="social-icon"><i class="ri-github-fill icon"></i></a>
+          </div>
+        </div>
+        <h4 id="sda">Scroll Down ↓</h4>
+      </section>
+      <section id="About">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img src="./assets/Images/coder-hoody.jpeg" alt="Profile Picture" class="about-pic">
+          </div>
+          <div class="about-details-container">
+            <div class="about-container">
+              <div class="details-container">
+                <i class="ri-briefcase-fill icon"></i>
+                <h3>Experience</h3>
+                <p>2+ Years <br> Full Stack Development</p>
+              </div>
+              <div class="details-container">
+                <i class="ri-graduation-cap-fill icon"></i> 
+                <h3>Education</h3>
+                <p>BCA Bachelor in Computer Application</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p><span>Hii,</span> This is me <span>Mandeep Malakar</span> here. I'm From <span>India</span>. A Hands-On <span>Full Stack Developer</span>. Working For <span>Clients</span> from different <span>Country</span>. I'm also <span>passionate</span> for <span>Ethical Hacking</span>.
+              A small <span>YouTuber</span> with <span>54K Subscriber</span>. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#Experience" id="down-arrow"><i class="ri-arrow-down-double-line Arrow"></i></a>
+      </section>
+      <section id="Experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="Experience-Details-Container">
+          <div class="about-container">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Fronted Development</h2>
+              <div class="article-container">
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                  <h3>SAAS</h3>
+                  <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>Figma</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>PostgreSQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>Node Js</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>Express Js</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>MongoDB</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>Git</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="ri-checkbox-circle-fill icon"></i>
+                  <div>
+                    <h3>Redis</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <a href="#Projects"><i class="ri-arrow-down-double-line Exp-Arrow"></i></a>
+        </div>
+      </section>
+      <section id="Projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="Experience-Details-Container">
+          <div class="about-container">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Images/Mechanical.jpg" alt="Projects Image" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button class="btn btn-container project-btn cv-ref-btn" onclick="location.href='https://github.com/tagda-coder'">Github</button>
+                <button class="btn btn-container project-btn live-demo" onclick="location.href='https://github.com/tagda-coder'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Images/land page.webp" alt="Projects Image" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button class="btn btn-container project-btn cv-ref-btn" onclick="location.href='https://github.com/tagda-coder'">Github</button>
+                <button class="btn btn-container project-btn live-demo" onclick="location.href='https://github.com/tagda-coder'">Live Demo</button>
+            </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Images/20230901_145327.jpg" alt="Projects Image" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-container project-btn cv-ref-btn" onclick="location.href='https://github.com/tagda-coder'">Github</button>
+              <button class="btn btn-container project-btn live-demo" onclick="location.href='https://github.com/tagda-coder'">Live Demo</button>
+          </div>
+          <a href="#Contact"><i class="ri-arrow-down-double-line Proj-Arrow"></i></a>
+        </div>
+      </section>
+      <section id="Contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <i class="ri-mail-fill contact-icon icon"></i>
+            <p><a href="mailto:tagdacoder@gmail.com">mandeep@gmail.com</a></p>
+            
+            <i class="ri-phone-fill contact-icon icon"></i>
+            <p><a href="tel:+91 9199731523">+91 9199731523</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Copyright  &#169; 2024 Mandeep. All rights Reserved.</p>
+        <div class="thanks-message-container">
+          <h1 id="message">Thank You To Visit Our Website</h1>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
